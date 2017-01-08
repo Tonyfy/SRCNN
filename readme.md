@@ -38,13 +38,19 @@
 
 ### model 部署
 
- ```SRCNN-test/``` 中给出了多种模型参数配置（网络层数、filter size、训练集等）下的模型文件。可进行对比实验。
+#### matlab test 
+
+ ```SRCNN-test/``` 中给出了多种模型参数配置（网络层数、filter size、训练集等）下的模型文件。可进行对比实验。下面使用imageNet 9-3-5 模型测试得到。
 
 ![sr][sr]
 [sr]:img/super-resolution.jpg
 
-也可使用C++或者python接口，利用训练好的caffemodel，进行实际使用。
+#### python test with caffe 
 
+使用```demo/demo.py```进行测试，先将原图进行下采样和上采样，获得低分辨率图像，再进行重建。
+下面使用91Train 9-1-5 模型测试得到。效果比使用```imageNet```训练的略差。
+![re][re]
+[re]:demo/src_lr_re.jpg
 
 ### 应用点
 

@@ -8,8 +8,8 @@ test = importdata('nohup.log.test');
 train_data = train.data;
 test_data = test.data;
 
-train_iter = train_data(1:100:end,1);
-train_loss = train_data(1:100:end,3);
+train_iter = train_data(1:1000:end,1);
+train_loss = train_data(1:1000:end,3);
 test_iter = test_data(:,1);
 test_loss = test_data(:,3);
 

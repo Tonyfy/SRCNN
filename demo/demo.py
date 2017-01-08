@@ -5,8 +5,8 @@ import cv2
 import caffe
 import matplotlib.pyplot as plt
 
-prototxt = r"F:/fandy/hack/SRCNN/examples/SRCNN/SRCNN_deploynet.prototxt"
-caffemodel = r"F:/fandy/hack/SRCNN/examples/SRCNN/snapshot/SRCNN_iter_15000000.caffemodel"
+prototxt = r"../examples/SRCNN/SRCNN_deploynet.prototxt"
+caffemodel = r"../examples/SRCNN/snapshot/SRCNN_iter_15000000.caffemodel"
 
 if not os.path.isfile(caffemodel):
     print ("caffemodel not found!")

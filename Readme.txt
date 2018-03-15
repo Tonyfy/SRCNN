@@ -29,3 +29,4 @@ Usage:
 
 
 4. After training, you can extract parameters from the caffe model and save them in the format that can be used in our test package (SRCNN_v1). To do this, you need to install mat-caffe first, then open MATLAB and direct to ($Caffe_Dir) and run "saveFilters.m". The "($Caffe_Dir)/examples/SRCNN/x3.mat" will be there for you.
+
